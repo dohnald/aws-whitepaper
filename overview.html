@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazon Web Services 개요 | AWS 백서</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <meta property="og:image" content="https://aws-whitepaper.github.io/logo.jpg"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://aws-whitepaper.github.io/overview.html"/>
+        <meta property="og:description" content="description"/>
+        <meta property="og:title" content="Amazon Web Services 개요 | AWS 백서"/>
+    </head>
+    <body>
+        <header><a href="./">AWS Whitepaper</a></header>
+        <h1>Amazon Web Services 개요</h1>
+        <h2>요약 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html">Overview of Amazon Web Services</a></h2>
+        <p>AWS 클라우드에서는 컴퓨팅 파워, 스토리지 옵션, 네트워킹 및 데이터베이스 등 다양한 인프라 서비스를 제공합니다. 이러한 서비스는 온디맨드 유틸리티로 제공되며 몇 초 만에 사용할 수 있고 종량 과금제가 적용됩니다. 데이터 웨어하우징에서 배포 도구, 디렉터리에서 콘텐츠 전송까지 90개가 넘는 AWS 서비스를 사용할 수 있습니다. 신규 서비스는 초기 자본 지출 없이 신속하게 프로비저닝할 수 있습니다. 따라서 엔터프라이즈, 스타트업, 중소기업 및 공공 부문 고객이 변화하는 비즈니스 요구 사항에 신속히 대응하는 데 필요한 구성 요소에 액세스할 수 있습니다. 이 백서에서는 AWS 클라우드의 이점을 개관하고 플랫폼을 구성하는 서비스를 소개합니다.</p>
+        <h2>서론</h2>
+        <p>2006년 Amazon Web Services(AWS)는 IT 인프라 서비스를 현재 클라우드 컴퓨팅으로 흔히 알려져 있는 웹 서비스의 형태로 기업에 제공하기 시작했습니다. 클라우드 컴퓨팅의 주요 이점 중 하나는 초기 기본 인프라 비용을 비즈니스에 맞춰 조정되는저렴한 가변 비용으로 대체할 수 있는 기회가 된다는 점입니다. 클라우드를 사용하는 기업은 수주 또는 수개월 전부터 미리 서버와 기타 IT 인프라를 계획하고 조달할 필요가 없습니다. 그 대신 몇 분 만에 수백 개 또는 수천 개의 서버를 즉시 가동하여 더 빠르게 성과를 달성할 수 있습니다.</p>
+        <p>현재 AWS는 전 세계 190개 국가의 수십만 개 기업을 움직이는 클라우드에 안정성 높고 확장 가능한 저비용 인프라 플랫폼을 제공하고 있습니다.</p>
+        <h2>클라우드 컴퓨팅이란 무엇인가? <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/what-is-cloud-computing.html">What Is Cloud Computing?</a></h2>
+        <p>클라우드 컴퓨팅이란 인터넷에서 종량 요금제 방식으로 클라우드 서비스 플랫폼을 통해 컴퓨팅 파워, 데이터베이스 스토리지, 애플리케이션, 기타 IT 리소스를 온디맨드로 제공하는 서비스를 말합니다. 수백만 모바일 사용자에게 사진을 공유하는 애플리케이션을 실행하거나 기업의 중요 업무를 지원하든 간에 클라우드 서비스 플랫폼을 사용하면 유연하고 비용이 적게 드는 IT 리소스에 빠른 속도로 액세스할 수 있습니다. 클라우드 컴퓨팅을 사용하면 하드웨어에 막대한 사전 투자를 하거나 하드웨어를 유지 관리하기 위해 많은 시간을 할애하지 않아도 됩니다. 그 대신 새로운 아이디어를 실현하거나 IT 부서를 운영하는 데 필요한 컴퓨팅 리소스의 유형 및 크기를 정확하게 프로비저닝할 수 있습니다. 필요한 만큼의 리소스에 거의 바로 액세스할 수 있으며, 사용한 부분에 대해서만 비용을 지불합니다.</p>
+        <p>클라우드 컴퓨팅은 서버, 스토리지, 데이터베이스 및 광범위한 애플리케이션 서비스를 인터넷을 통해 간단하게 액세스할 수 있는 방법을 제공합니다. Amazon Web Services와 같은 클라우드 서비스 플랫폼은 이러한 애플리케이션 서비스에 필요한 네트워크 연결 하드웨어를 소유 및 유지 관리하는 한편, 고객은 웹 애플리케이션을 통해 필요한 것을 프로비저닝하고 사용하는 방식입니다.</p>
+        <h2>클라우드 컴퓨팅의 여섯 가지 이점 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html">Six Advantages of Cloud Computing</a></h2>
+        <ul>
+            <li><strong>자본 비용을 가변 비용으로 대체</strong> -  데이터 센터 및 서버를 어떻게 사용할지 계획을 세우기도 전에 막대한 투자를 하는 대신에 컴퓨팅 리소스를 사용할 때만 요금을 내고 사용한 양에 대해서만 지불할 수 있습니다.</li>
+            <li><strong>규모의 경제로 얻게 되는 이점</strong> - 클라우드 컴퓨팅을 사용하면 소유하고 있는 인프라에서 작업을 수행할 때보다 가변 비용이 낮습니다. 수십만 고객의 사용량이 클라우드에 합산되므로 AWS와 같은 공급자는 더 높은 규모의 경제를 달성할 수 있고, 이는 종량제 요금이 더 낮아지는 효과로 이어집니다.</li>
+            <li><strong>용량 추정 불필요</strong> - 필요한 인프라 용량을 추정할 필요가 없습니다. 애플리케이션을 배포하기 전에 용량을 결정하면 고가의 리소스를 구입하여 유휴 상태로 두게 되거나 한정된 용량으로 작업하게 되는 경우가 자주 발생합니다. 클라우드 컴퓨팅을 사용하면 이러한 문제가 해결됩니다. 필요에 따라 많거나 적은 용량을 사용하다가 몇 분 정도의 여유를 두고 요청해도 필요한 만큼 확장하거나 축소할 수 있기 때문입니다.</li>
+            <li><strong>속도 및 민첩성 개선</strong> - 클라우드 컴퓨팅 환경에서는 새로운 IT 리소스를 클릭 몇 번만으로 확보할 수 있습니다. 이는 개발자들이 리소스를 사용할 수 있게 하는 데 몇 주 걸리던 것이 단 몇 분으로 단축됨을 뜻합니다. 이에 따라 실험 및 개발에 드는 비용이 절감되고 시간이 단축되므로 조직의 민첩성이 크게 향상됩니다.</li>
+            <li><strong>데이터 센터 운영 및 유지 관리에 비용 투자 불필요</strong> - 인프라가 아니라 비즈니스를 차별화할 프로젝트에 집중할 수 있습니다. 클라우드 컴퓨팅을 사용하면 서버를 랙에 설치하고 쌓아 올리고 서버에 전원을 공급하는 힘든 작업 대신 고객에게 집중할 수 있습니다.</li>
+            <li><strong>몇 분 만에 전지역으로 확대됨</strong> - 클릭 몇 번으로 세계 곳곳의 여러 리전에 애플리케이션을 손쉽게 배포할 수 있습니다. 이는 곧 지연 시간을 줄이고 최소 비용으로 고객에게 더 나은 사용 환경을 제공할 수 있음을 뜻합니다.</li>
+        </ul>
+        <h2>클라우드 컴퓨팅 유형 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of-cloud-computing.html">Types of Cloud Computing</a></h2>
+        <p>클라우드 컴퓨팅을 사용하면 개발자와 IT 부서는 가장 중요한 사안에 집중하고 조달, 유지 관리, 용량 계획과 같은 획일적인 업무에는 시간을 빼앗기지 않게 됩니다. 클라우드 컴퓨팅의 인기가 올라가면서 다른 사용자의 특정 필요를 충족시키기 위해 몇 가지 다른 모델 및 배포 전략이 생겨났습니다. 클라우드 서비스 및 배포 방법의 각 유형을 사용해 다양한 수준으로 제어, 유연한 대처 및 관리를 할 수 있습니다. 서비스로서의 인프라, 서비스로서의 플랫폼, 서비스로서의 소프트웨어 간의 차이뿐 아니라 어떤 배포 전략을 사용할 수 있는지 이해하는 것이 필요에 적합한 서비스 세트를 결정하는 데 도움됩니다.</p>
+        <h3>클라우드 컴퓨팅 모델</h3>
+        <h4>서비스로서의 인프라(IaaS)</h4>
+        <p>서비스로서의 인프라(IaaS)에는 클라우드 IT의 기본 구성 요소가 포함되어 있어 일반적으로 네트워킹 기능, 컴퓨터(가상 또는 전용 하드웨어) 및 데이터 스토리지 공간에 액세스할 수 있습니다. IaaS는 IT 리소스에 대한 최고 수준의 유연성 및 관리 제어 기능을 제공하며 오늘날 많은 IT 부서 및 개발자에게 익숙한 기존 IT 리소스와 아주 유사합니다.</p>
+        <h4>서비스로서의 플랫폼(PaaS)</h4>
+        <p>서비스로서의 플랫폼(PaaS)을 사용하면 기본 인프라(대개 하드웨어 및 운영 체제)를 관리할 필요가 없으므로 조직은 애플리케이션 배포 및 관리에 집중할 수 있습니다. 즉, 애플리케이션 실행과 관련된 리소스 구매, 용량 계획, 소프트웨어 유지 관리, 패치 또는 다른 모든 획일적인 작업에 대한 부담을 덜어 더욱 효율적이 되도록 해줍니다.</p>
+        <h4>Software as a Service (SaaS)</h4>
+        <p>서비스로서의 소프트웨어(SaaS)는 서비스 공급자가 운영하고 관리하는 완제품을 제공합니다. 대부분의 경우 서비스로서의 소프트웨어라고 하면 최종 사용자 애플리케이션을 말합니다. SaaS를 사용하면 서비스가 유지 관리되거나 기본 인프라가 관리되는 방식은신경 쓸 필요가 없고 그 특정 소프트웨어를 어떻게 활용할 것인지만 생각하면 됩니다. SaaS 애플리케이션의 흔한 예는 이메일을 주고 받는 데 사용하는 웹 기반 이메일을 들 수 있는데, 이 경우 이메일 제품에 추가되는 기능을 관리하거나 이메일 프로그램이 실행되는 기반인 서버 및 운영 체제를 유지 관리할 필요가 없습니다.</p>
+        <h3>클라우드 컴퓨팅 배포 모델</h3>
+        <h4>클라우드</h4>
+        <p>클라우드 기반 애플리케이션은 클라우드상에 완전히 배포되며 애플리케이션의 모든 부분이 클라우드에서 실행됩니다. 클라우드에서 사용하는 애플리케이션은 <a href="https://aws.amazon.com/what-is-cloud-computing/">클라우드 컴퓨팅의 이점</a>을 클라우드 기반 애플리케이션은 낮은 수준의 인프라상에 구축할 수 있고 또는 주요 인프라를 관리, 활용하기 위해 클라우드 내에서 생성되거나 기존 인프라에서 마이그레이션한 것입니다. 설계 및 확장할 필요가 없는 높은 수준의 서비스를 사용할 수 있습니다.</p>
+        <h4>하이브리드</h4>
+        <p>하이브리드 배포는 클라우드 기반 리소스와 클라우드에 위치하지 않은 기존 리소스 간에 인프라와 애플리케이션을 연결하는 방법입니다. 가장 흔한 하이브리드 배포 방법은 클라우드와 기존 온프레미스 인프라 사이에서 이루어지는 것으로서, 클라우드 리소스를 내부 시스템에 연결함과 동시에 조직의 인프라를 클라우드로 확장 및 확대하는 것입니다. AWS가 하이브리드 배포를 지원하는 방법에 대한 자세한 내용은 <a href="https://aws.amazon.com/hybrid/">하이브리드</a> 페이지를 참조하십시오.</p>
+        <h4>온-프레미스</h4>
+        <p>가상화 및 리소스 관리 도구를 사용하여 리소스를 온프레미스에 배치하는 것을 때로 '프라이빗 클라우드'라고 합니다. 온프레미스 배포 방법은 클라우드 컴퓨팅의 이점이 많지는 않지만 전용 리소스를 제공하기 때문에 필요한 경우가 때때로 있습니다. 대부분의 경우 온프레미스 배포 모델은 리소스 활용도를 높이기 위해 애플리케이션 관리 및 가상화 기술을 사용한다는 점에서 레거시 IT 인프라와 같습니다. AWS가 도움이 되는 방법에 대한 자세한 내용은 다음을 참조하십시오. <a href="http://aws.amazon.com/hybrid/use-cases/#Use_case.3A_Cloud_services_on-premises">Use case: Cloud services on-premises</a></p>
+        <h2>글로벌 인프라 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html">Global Infrastructure</a></h2>
+        <p>AWS는 190개가 넘는 국가에서 활성 고객 100만 명에게 서비스를 제공합니다. 고객의 지연 시간을 줄이고 처리량은 늘리며 고객의 데이터가 고객이 지정하는 리전에만 상주할 수 있도록 글로벌 인프라를 꾸준히 확장하고 있습니다. AWS는 고객의 비즈니스가 성장함에 따라 고객의 글로벌 요건에 맞는 인프라를 지속적으로 제공할 것입니다.</p>
+        <p>AWS 클라우드 인프라는 리전 및 가용 영역(AZ)을 중심으로 구축됩니다. 리전은 전 세계에 분산된 물리적 위치로서 여러 AZ가 운영됩니다. AZ는 하나 이상의 개별 데이터 센터로 구성되며 각 데이터 센터는 분리된 시설에 구축되고 중복 전력, 네트워킹 및 연결성을 갖추고 있습니다. 이러한 AZ를 사용하면단일데이터센터에서기대할수있는것보다더높은가용성,내결함성및확장성을지닌 프로덕션 애플리케이션과 데이터베이스를 운영할 수 있습니다. AWS 클라우드는 전 세계 16개의 지리적 리전에 42개의 AZ를 운영하고 있으며 2017년에는 5개의 가용 영역과 2개의 리전이 추가될 예정입니다.</p>
+        <p>각 Amazon 지역은 다른 Amazon 지역에서 완전히 격리되도록 구성되었습니다. 이를 통해 가장 강력한 내결함성 및 안정성을 달성할 수 있습니다. 각 AZ는 기본적으로 서로 격리되어 있지만 한 리전의 여러 AZ는 지연 시간이 짧은 링크를 통해 연결되어 있습니다. AWS는 각 리전 내의 여러 가용 영역뿐 아니라 여러 지리적 리전 내에 인스턴스를 배치하고 데이터를 저장할 수 있는 유연성을 제공합니다. 각 가용 영역은 독립된 장애 영역으로 설계되었습니다. 즉 가용 영역 일반적인 대도시 지역 내에 물리적으로 고립되어 있으며 홍수 위험성이 낮은 지대에 위치합니다(자세한 홍수 지대 분류는 지역에 따라 차이가 있음). 또한, 무정전 전원 공급 장치(UPS)와 현장 백업 발전 시설을 분리하여 독립적인 유틸리티의 서로 다른 그리드를 통해 전력을 공급받음으로써 단일장애점(Single-point-of-Failure)을 더욱 줄여줍니다. AZ는 모두 다중 티어-1 전송 공급자에게 중복으로 연결되어 있습니다.</p>
+        <h2>보안 및 규정 준수 <a href=""https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-and-compliance.html>Security and Compliance</a></h2>
+        <h3>보안</h3>
+        <p>AWS에서 가장 우선순위가 높은 것이 <a href="https://aws.amazon.com/security">클라우드 보안</a>입니다. AWS 고객은 보안에 가장 보안에 민감한 조직의 요구 사항에 부합하도록 구축된 데이터 센터 및 네트워크 아키텍처의 혜택을 누릴 수 있습니다. 클라우드상의 보안은 온프레미스 데이터 센터의 보안과 비교해 시설 및 하드웨어 유지 관리 비용이 없다는 점만 빼고는 동일합니다. 클라우드에서는 물리적 서버나 스토리지 디바이스를 관리할 필요가 없습니다. 대신 소프트웨어 기반 보안 도구를 사용하여 클라우드 리소스에서 송수신되는 정보를 모니터링하고 보호합니다.</p>
+        <p>AWS 클라우드의 장점은 보안 환경을 유지하고 사용하는 서비스에 대해서만 요금을 지불하면서 확장 및 혁신을 이룰 수 있다는 것입니다. 따라서 온프레미스 환경보다 더 적은 비용으로 필요한 보안 수준을 유지할 수 있습니다.</p>
+        <p>AWS 고객이 되면 AWS 정책, 아키텍처, 운영 프로세스 관련 모범 사례를 모두 이어받아 보안에 민감한 고객의 요구 사항을 충족할 수 있습니다. 보안 제어에 필요한 유연성과 민첩성을 확보합니다.</p>
+        <p>AWS 클라우드에서는 공동 책임 모델을 사용할 수 있습니다. AWS는 클라우드 <strong>자체의</strong> 보안을 관리하지만 클라우드 <strong>내에서</strong> 보안을 유지하는 것은 고객의 책임입니다. 이는 고객이 자신의 콘텐츠, 플랫폼, 애플리케이션, 시스템 및 네트워크에 대한 보안(고객 스스로 선택)을 제어할 권한을 온사이트 데이터 센터의 경우와 다름없이 보유함을 뜻합니다.</p>
+        <p>AWS는 온라인 리소스, 담당자 및 파트너를 통해 고객에게 지침과 전문 지식을 제공합니다. AWS는 당면한 문제에 대한 조언을 제공할 뿐 아니라 고객에게 보안 문제가 발생했을 때 AWS가 함께 대응에 나선다는 이점이 있습니다.</p>
+        <p>고객은 자신의 보안 목표를 달성하는 데 도움이 되는 수백 가지 도구와 기능에 액세스할 수 있습니다. AWS는 네트워크 보안, 구성 관리, 액세스 제어 및 데이터 암호화 전반에 걸쳐 보안 전용 도구 및 기능을 제공합니다.</p>
+        <p>끝으로 AWS 환경은 다양한 지역과 업종을 포괄하는 인증 기관으로부터 지속적인 감사와 인증을 받습니다. AWS 환경에서는 자산 재고 목록 및 권한 액세스 보고를 위한 자동화 도구를 이용할 수 있습니다.</p>
+        <h4>AWS 보안의 혜택</h4>
+        <ul>
+            <li><strong>데이터를 안전하게 유지</strong>: AWS 인프라는 강력한 보안 조치를 적용하여 고객의 개인 정보를 보호합니다. 모든 데이터가 고도로 보안된 AWS 데이터 센터에 저장됩니다.</li>
+            <li><strong>규정 준수 요구사항 충족</strong>: AWS에서 인프라에 있는 수십 개의 규정 준수프로그램을 관리합니다. 따라서 고객의 규정 준수 부문 중 일부가 이미 충족되어 있습니다.</li>
+            <li><strong>비용 절감</strong>: AWS 데이터 센터를 사용하여 비용을 줄이십시오. 자체 시설을 운영할 필요 없이 가장 높은 보안 표준을 유지할 수 있습니다.</li>
+            <li><strong>빠르게 확장</strong>: AWS 클라우드 사용에 따라 보안이 확장됩니다. AWS 인프라는 고객의 비즈니스 규모와 관계없이 데이터를 안전하게 유지하도록 설계되었습니다.</li>
+        </ul>
+        <h3>규정 준수</h3>
+        <p><a href="https://aws.amazon.com/ko/compliance/">AWS 클라우드 규정 준수</a>를 시행하면 클라우드의 보안 및 데이터 보호를 유지할 수 있는 강력한 제어장치가 AWS에 마련되어 있음을 이해할 수 있습니다. AWS 클라우드 인프라를 기반으로 하여 시스템을 구축하므로 규정 준수는 AWS와 고객의 공동 책임이 됩니다. AWS 규정 준수 프로그램은 해당되는 규정 준수 또는 감사 표준과 거버넌스 중심의 감사에 적합한 서비스 기능을 한데 묶어 놓음으로써 기존 프로그램 위에 구축할 수 있습니다. 따라서 고객은 AWS 보안 제어 환경에서 설정하고 작동할 수 있습니다.</p>
+        <p>AWS가 고객에게 제공하는 IT 인프라는 모범 보안 사례와 다양한 IT 보안 표준에 따라 설계 및 관리됩니다. 다음은 AWS가 준수하는 보증 프로그램의 일부 목록입니다.</p>
+        <ul>
+            <li>SOC 1/ISAE 3402, SOC 2, SOC 3</li>
+            <li>FISMA, DIACAP 및 FedRAMP</li>
+            <li>PCI DSS 레벨 1</li>
+            <li>ISO 9001, ISO 27001, ISO 27018</li>
+        </ul>
+        <p>AWS는 백서, 보고서, 인증, 승인 및 기타 제3자 증명을 통해 IT 제어 환경에 관한 광범위한 정보를 고객에게 제공합니다. 자세한 정보는 <a href="http://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Whitepaper.pdf">위험 및 규정 준수 백서</a>와 <a href="https://aws.amazon.com/security/">AWS 클라우드 보안</a>에서 얻을 수 있습니다.</p>
+        <h2>클라우드 플랫폼 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-web-services-cloud-platform.html">Amazon Web Services Cloud Platform</a></h2>
+        <h3>AWS Management Console</h3>
+        <p>간단하고 직관적인 사용자 인터페이스인 <a href="https://aws.amazon.com/console/">AWS Management Console</a>을 통해 Amazon Web Services에 액세스하고 이를 관리합니다. 또한 <a href="https://aws.amazon.com/console/mobile/">AWS Console 모바일 앱</a>을 사용하면 사용 중인 리소스를 신속하게 확인할 수 있습니다.</p> 
+        <h3>AWS Command Line Interface</h3>
+        <p><a href="https://aws.amazon.com/cli">AWS 명령줄 인터페이스(CLI)</a>는 AWS 서비스를 관리하는 통합 도구입니다. 도구 하나만 다운로드하여 구성하면 여러 AWS 서비스를 명령행에서 관리하고 스크립트를 통해 자동화할 수 있습니다.</p>
+        <h3>Software Development Kits</h3>
+        <p>AWS의 <a href="https://aws.amazon.com/tools/">소프트웨어 개발 키트(SDK)</a>를 통해 프로그래밍 언어 또는 플랫폼에 맞게 조정된 애플리케이션 프로그래밍 인터페이스(API)로 애플리케이션에서 AWS 서비스를 더욱 간편하게 사용할 수 있습니다.</p>
+        <h3>Analytics</h3>
+        <h4>Amazon Athena</h4>
+        <p><a href="https://aws.amazon.com/athena">Amazon Athena</a> 표준 SQL을 사용해 Amazon S3에 저장된 데이터를 간편하게 분석할 수 있는 대화식 쿼리 서비스입니다. Athena는 서버리스 서비스이므로 관리할 인프라가 없으며 실행한 쿼리에 대해서만 비용을 지불하면 됩니다.</p>
+        <p>Athena는 사용이 쉽습니다. Amazon S3에 저장된 데이터를 가리키고 스키마를 정의한 후 표준 SQL을 사용하여 쿼리를 시작하기만 하면 됩니다. 그러면 대부분 결과가 수 초 이내에 제공됩니다. Athena에서는 데이터 분석을 준비하기 위한 복잡한 추출, 변환, 적재(ETL) 작업이 필요 없습니다. 따라서 SQL을 다룰 수 있는 사람은 누구나 신속하게 대규모 데이터 세트를 분석할 수 있습니다.</p>
+        <p>Athena는 AWS Glue 데이터 카탈로그와 즉시 통합되므로, 다양한 서비스에 걸쳐 통합된 메타데이터 리포지토리를 생성하고, 데이터 원본을 크롤링하여 스키마를 검색하고 카탈로그를 신규 및 수정된 테이블 정의와 파티션 정의로 채우며, 스키마 버전을 관리할 수 있습니다.</p>
+        <h4>Amazon EMR</h4>
+        <p><a href="https://aws.amazon.com/emr">Amazon EMR</a>은 Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi 및 Presto와 같은 오픈 소스 도구를 사용하여 방대한 양의 데이터를 처리하기 위한 업계 최고의 클라우드 빅 데이터 플랫폼입니다. Amazon EMR은 프로비저닝 용량 및 클러스터 조정 등의 시간이 소요되는 작업을 자동화하여 빅데이터 환경을 쉽게 설치, 운영, 확장하게 해줍니다. EMR을 사용하면 기존 온프레미스 솔루션의 50%도 안 되는 비용으로 표준 Apache Spark보다 3배 이상 빠르게 페타바이트 규모의 분석을 실행할 수 있습니다. Amazon EC2 instance, Amazon Elastic Kubernetes Service (EKS) cluster, 또는 AWS Outposts 기반 EMR에서 워크로드를 실행할 수 있습니다.</p>
+        <h4>Amazon CloudSearch</h4>
+        <p><a href="https://aws.amazon.com/cloudsearch/">Amazon CloudSearch</a>는 AWS 클라우드의 관리형 서비스로, 이를 사용하면 웹 사이트 또는 애플리케이션을 위한 검색 솔루션을 효율적인 비용으로 간단하게 설정, 관리 및 조정할 수 있습니다. Amazon CloudSearch는 강조 표시, 자동 완성, 지형 정보 검색 등 인기 있는 검색 기능과 34개 언어를 지원합니다.</p>
+        <h4>Amazon Elasticsearch Service</h4>
+        <p><a href="https://aws.amazon.com/elasticsearch-service/">Amazon Elasticsearch Service</a>는 손쉽게 Elasticsearch를 배포, 보호, 실행이 가능한 완전관리형 서비스로 규모에 따라 저렴한 비용을 지불할 수 있습니다. With Amazon Elasticsearch Service, you get easy-to-use APIs and real-time analytics capabilities to power use-cases such as log analytics, full-text search, application monitoring, and clickstream analytics, with enterprise-grade availability, scalability, and security. 이 서비스는 데이터 수집과 시각화를 위해 Kibana와 Logstash 같은 오픈소스 도구와 통합됩니다. 또한 <a href="https://aws.amazon.com/vpc/">Amazon Virtual Private Cloud (Amazon VPC)</a>, <a href="https://aws.amazon.com/kms/">AWS Key Management Service (AWS KMS)</a>, <a href="https://aws.amazon.com/kinesis/data-firehose">Amazon Kinesis Data Firehose</a>, <a href="https://aws.amazon.com/lambda">AWS Lambda</a>, <a href="https://aws.amazon.com/iam/">AWS Identity and Access Management (IAM)</a>, <a href="https://aws.amazon.com/cognito/">Amazon Cognito</a>, <a href="https://aws.amazon.com/cloudwatch">Amazon CloudWatch</a> 등 다른 AWS 서비스와 원활하게 통합되므로 빠른 인사이트를 얻을 수 있습니다.</p> 
+        <h4>Amazon Kinesis</h4>
+        <p><a href="https://aws.amazon.com/kinesis/">Amazon Kinesis</a>를 사용하면 실시간 스트리밍 데이터를 손쉽게 수집, 처리 및 분석할 수 있으므로 적시에 통찰력을 확보하고 새로운 정보에 신속하게 대응할 수 있습니다. Amazon Kinesis는 모든 규모의 스트리밍 데이터를 비용 효율적으로 처리할 수 있는 핵심 기능과 더불어 애플리케이션 요구 사항에 가장 적합한 도구를 선택할 수 있는 유연성을 제공합니다. Amazon Kinesis에서는 기계 학습, 분석 및 기타 애플리케이션을 위해 비디오, 오디오, 애플리케이션 로그, 웹 사이트 클릭스트림 및 IoT 텔레메트리 데이터와 같은 실시간 데이터를 수집할 수 있습니다. Amazon Kinesis를 사용하면 모든 데이터가 수집된 후에야 처리를 시작할 수 있는 것이 아니라 데이터가 수신되는 대로 처리 및 분석하여 즉시 대응할 수 있습니다.</p>
+        <p>Amazon Kinesis는 현재 다음 4개의 서비스를 제공합니다: Kinesis Data Firehose, Kinesis Data Analytics, Kinesis Data Streams, and Kinesis Video Streams </p>
+        <h4>Amazon Kinesis Data Firehose</h4>
+        <p><a href="https://aws.amazon.com/kinesis/firehose/">Amazon Kinesis Firehose</a>는 스트리밍 데이터를 데이터 레이크, 데이터 스토어 및 분석 서비스에 안정적으로 로드하는 가장 쉬운 방법입니다. Amazon Kinesis Data Firehose는 스트리밍 데이터를 캡처하고 변환하고 Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, 일반 HTTP 엔드포인트 및 Datadog, New Relic, MongoDB, Splunk와 같은 서비스 공급자로 전송할 수 있습니다. Amazon Kinesis Data Firehose는 데이터 처리량에 대응하여 자동으로 확장되며 지속적인 관리가 필요 없는 완전관리형 서비스입니다. 또한, 데이터 스트림을 로드하기 전에 배치 처리, 압축, 변환 및 암호화하여 스토리지의 사용량을 최소화하고 보안을 강화할 수 있습니다.</p> 
+        <p>AWS Management Console에서 Firehose 전송 스트림을 손쉽게 생성하고, 클릭 몇 번으로 구성한 다음, 수십만 개의 데이터 원본에서 지정 대상으로 스트리밍 데이터를 수집하기 시작할 수 있습니다. 또한 데이터가 전송되기 전에 수신 데이터를 Apache Parquet 및 Apache ORC와 같은 개방형 표준 기반 형식으로 자동으로 변환하도록 데이터 스트림을 구성할 수도 있습니다.</p>
+        <h4>Amazon Kinesis Data Analytics</h4>
+        <p><a href="https://aws.amazon.com/kinesis/analytics/">Amazon Kinesis Data Analytics</a>는 Apache Flink를 통해 실시간으로 스트리밍 데이터를 변환 및 분석할 수 있는 가장 쉬운 방법입니다. Apache Flink는 데이터 스트림 처리를 위한 오픈 소스 프레임워크 및 엔진입니다. Amazon Kinesis Data Analytics는 Apache Flink 애플리케이션을 빌드 및 관리하고 다른 AWS 서비스와 통합하는 데 따르는 복잡성을 줄여줍니다.</p> 
+        <p>Amazon Kinesis Data Analytics는 스트리밍 애플리케이션의 지속적 실행에 필요한 모든 작업을 처리하며, 수신 데이터의 볼륨과 처리량에 맞춰 자동으로 확장됩니다. Amazon Kinesis Data Analytics를 사용하면 서버를 관리할 필요가 없고, 최소 요금이나 설치 비용도 없으며, 스트리밍 애플리케이션이 소비하는 리소스에 대해서만 결제하면 됩니다.</p>
+        <h4>Amazon Kinesis Data Streams</h4>
+        <p><a href="https://aws.amazon.com/kinesis/data-streams/">Amazon Kinesis Data Streams(KDS)</a>는 고도로 확장 가능하고 내구력 있는 실시간 데이터 스트리밍 서비스입니다. KDS는 웹 사이트 클릭스트림, 데이터베이스 이벤트 스트림, 금융 트랜잭션, 소셜 미디어 피드, IT 로그 및 위치 추적 이벤트와 같은 수십만 개의 소스에서 초당 기가바이트 규모의 데이터를 지속적으로 캡처할 수 있습니다. 수집된 데이터는 실시간 대시보드, 실시간 이상 항목 탐지, 동적 요금 등과 같은 실시간 분석 사용 사례를 지원할 수 있도록 수 밀리초 만에 제공됩니다.</p> 
+        <h4>Amazon Kinesis Video Streams</h4>
+        <p><a href="https://aws.amazon.com/kinesis/video-streams/">Amazon Kinesis Video Streams</a>를 사용하면 분석, ML(기계 학습), 재생 및 기타 처리를 위해 커넥티드 디바이스에서 AWS로 비디오를 쉽고 안전하게 스트리밍할 수 있습니다. Kinesis Video Streams는 수백만 대의 디바이스의 스트리밍 비디오 데이터를 수집하는 데 필요한 모든 인프라를 자동으로 프로비저닝하고 탄력적으로 조정합니다. 스트림의 비디오 데이터를 안정적으로 저장, 암호화 및 인덱싱하며, 사용하기 쉬운 API를 통해 데이터에 액세스할 수 있도록 지원합니다. Kinesis Video Streams를 사용하면 라이브 및 온디맨드 시청을 위해 비디오를 재생하고, Apache MxNet, TensorFlow 및 OpenCV와 같은 ML 프레임워크의 라이브러리 및 Amazon Rekognition Video와 통합을 통해 컴퓨터 비전 및 비디오 분석을 활용하는 애플리케이션을 신속하게 구축할 수 있습니다. Kinesis Video Streams는 WebRTC를 지원합니다. WebRTC는 간단한 API를 통해 웹 브라우저, 모바일 애플리케이션 및 커넥티드 디바이스 간에 실시간 미디어 스트리밍과 상호 작용을 활성화하는 오픈 소스 프로젝트입니다. 일반적인 사용 사례에는 비디오 채팅 및 피어투피어 미디어 스트리밍이 포함됩니다.</p>
+        <h4>Amazon Redshift</h4>
+        <p><a href="https://aws.amazon.com/redshift/">Amazon Redshift</a>는 표준 SQL을 통해 데이터 웨어하우스, 운영 데이터베이스 및 데이터 레이크에서 엑사바이트 규모의 정형 데이터 및 반정형 데이터를 쿼리하고 결합할 수 있습니다. Redshift는 Apache Parquet 같은 오픈 포맷을 사용하여 쿼리 결과를 S3 데이터 레이크에 손쉽게 다시 저장할 수 있도록 지원합니다. 이를 통해 Amazon EMR, Amazon Athena, Amazon SageMaker 등의 다른 분석 서비스에서 추가적인 분석을 수행할 수 있습니다.</p>
+        <h4>Amazon QuickSight</h4>
+        <p><a href="https://quicksight.aws/">Amazon QuickSight</a> is a fast, cloud-powered business intelligence (BI) service that makes it easy for you to deliver insights to everyone in your organization. QuickSight lets you create and publish interactive dashboards that can be accessed from browsers or mobile devices. You can embed dashboards into your applications, providing your customers with powerful self-service analytics. QuickSight easily scales to tens of thousands of users without any software to install, servers to deploy, or infrastructure to manage.</p>
+        <h4>AWS Data Pipeline</h4>
+        <h4>AWS Glue</h4>
+        <h4>AWS Lake Formation</h4>
+        <h4>Amazon Managed Streaming for Apache Kafka (Amazon MSK)</h4>
+        <h3>Application Integration</h3>
+        <li>AWS Step Functions</li>
+        <li>Amazon MQ</li>
+        <li>Amazon SQS</li>
+        <li>Amazon SNS</li>
+        <li>Amazon SWF</li>
+        <h3>AR and VR</h3>
+        <li>Amazon Sumerian</li>
+        <h3>AWS Cost Management</h3>
+        <li>AWS Cost Explorer</li>
+        <li>AWS Budgets</li>
+        <li>AWS Cost & Usage Report</li>
+        <li>Reserved Instance (RI) Reporting</li>
+        <h3>Blockchain</h3>
+        <li>Amazon Managed Blockchain</li>
+        <h3>Business Applications</h3>
+        <li>Alexa for Business</li>
+        <li>Amazon WorkDocs</li>
+        <li>Amazon WorkMail</li>
+        <li>Amazon Chime</li>
+        <h3>Compute Services</h3>
+        <li>Amazon EC2</li>
+        <li>Amazon EC2 Auto Scaling</li>
+        <li>Amazon Elastic Container Registry</li>
+        <li>Amazon Elastic Container Service</li>
+        <li>Amazon Elastic Kubernetes Service</li>
+        <li>Amazon Lightsail</li>
+        <li>AWS Batch</li>
+        <li>AWS Elastic Beanstalk</li>
+        <li>AWS Fargate</li>
+        <li>AWS Lambda</li>
+        <li>AWS Serverless Application Repository</li>
+        <li>AWS Outposts</li>
+        <li>VMware Cloud on AWS</li>
+        <h3>Customer Engagement</h3>
+        <li>Amazon Connect</li>
+        <li>Amazon SES</li>
+        <h3>Database</h3>
+        <li>Amazon Aurora</li>
+        <li>Amazon Relational Database Service</li>
+        <li>Amazon RDS on VMware</li>
+        <li>Amazon DynamoDB</li>
+        <li>Amazon ElastiCache</li>
+        <li>Amazon Neptune</li>
+        <li>Amazon Quantum Ledger Database (QLDB)</li>
+        <li>Amazon Timestream</li>
+        <li>Amazon DocumentDB (with MongoDB compatibility)</li>
+        <h3>Desktop and App Streaming</h3>
+        <li>Amazon WorkSpaces</li>
+        <li>Amazon AppStream 2.0</li>
+        <h3>Developer Tools</h3>
+        <li>AWS CodeCommit</li>
+        <li>CodeBuild</li>
+        <li>CodeDeploy</li>
+        <li>CodePipeline</li>
+        <li>AWS CodeStar</li>
+        <li>Amazon Corretto</li>
+        <li>AWS Cloud9</li>
+        <li>AWS X-Ray</li>
+        <h3>Game Tech</h3>
+        <li>Amazon GameLift</li>
+        <li>Amazon Lumberyard</li>
+        <h3>Internet of Things (IoT)</h3>
+        <li>AWS IoT Core</li>
+        <li>FreeRTOS</li>
+        <li>AWS IoT Greengrass</li>
+        <li>AWS IoT 1-Click</li>
+        <li>AWS IoT Analytics</li>
+        <li>AWS IoT Button</li>
+        <li>AWS IoT Device Defender</li>
+        <li>AWS IoT Device Management</li>
+        <li>AWS IoT Events</li>
+        <li>AWS IoT SiteWise</li>
+        <li>AWS IoT Things Graph</li>
+        <li>AWS Partner Device Catalog</li>
+        <h3>Machine Learning</h3>
+        <li>SageMaker</li>
+        <li>SageMaker Ground Truth</li>
+        <li>Amazon Comprehend</li>
+        <li>Amazon Lex</li>
+        <li>Amazon Polly</li>
+        <li>Amazon Rekognition</li>
+        <li>Amazon Translate</li>
+        <li>Amazon Transcribe</li>
+        <li>Amazon Elastic Inference</li>
+        <li>Amazon Forecast</li>
+        <li>Amazon Textract</li>
+        <li>Amazon Personalize</li>
+        <li>Amazon Deep Learning AMIs</li>
+        <li>AWS DeepLens</li>
+        <li>AWS DeepRacer</li>
+        <li>Apache MXNet on AWS</li>
+        <li>TensorFlow on AWS</li>
+        <li>AWS Inferentia</li>
+        <h3>Management and Governance</h3>
+        <li>Amazon CloudWatch</li>
+        <li>AWS Auto Scaling</li>
+        <li>AWS Control Tower</li>
+        <li>AWS Systems Manager</li>
+        <li>AWS CloudFormation</li>
+        <li>AWS CloudTrail</li>
+        <li>AWS Config</li>
+        <li>AWS OpsWorks</li>
+        <li>AWS Service Catalog</li>
+        <li>AWS Trusted Advisor</li>
+        <li>AWS Personal Health Dashboard</li>
+        <li>AWS Managed Services</li>
+        <li>AWS Console Mobile Application</li>
+        <li>AWS License Manager</li>
+        <li>AWS Well-Architected Tool</li>
+        <h3>Media Services</h3>
+        <li>Amazon Elastic Transcoder</li>
+        <li>AWS Elemental MediaConnect</li>
+        <li>AWS Elemental MediaConvert</li>
+        <li>AWS Elemental MediaLive</li>
+        <li>AWS Elemental MediaPackage</li>
+        <li>AWS Elemental MediaStore</li>
+        <li>AWS Elemental MediaTailor</li>
+        <h3>Migration and Transfer</h3>
+        <li>AWS Migration Hub</li>
+        <li>AWS Application Discovery Service</li>
+        <li>AWS Database Migration Service</li>
+        <li>AWS Server Migration Service</li>
+        <li>AWS Snowball</li>
+        <li>AWS Snowball Edge</li>
+        <li>AWS Snowmobile</li>
+        <li>AWS DataSync</li>
+        <li>AWS Transfer for SFTP</li>
+        <h3>Mobile Services</h3>
+        <li>AWS Amplify</li>
+        <li>Amazon Cognito</li>
+        <li>Amazon Pinpoint</li>
+        <li>AWS Device Farm</li>
+        <li>AWS AppSync</li>
+        <h3>Networking and Content Delivery</h3>
+        <li>Amazon VPC</li>
+        <li>Amazon CloudFront</li>
+        <li>Amazon Route 53</li>
+        <li>AWS PrivateLink</li>
+        <li>AWS Direct Connect</li>
+        <li>AWS Global Accelerator</li>
+        <li>Amazon API Gateway</li>
+        <li>AWS Transit Gateway</li>
+        <li>AWS App Mesh</li>
+        <li>AWS Cloud Map</li>
+        <li>Elastic Load Balancing</li>
+        <h3>Robotics</h3>
+        <li>AWS RoboMaker</li>
+        <h3>Satellite</h3>
+        <li>AWS Ground Station</li>
+        <h3>Security, Identity, and Compliance</h3>
+        <li>AWS Security Hub</li>
+        <li>Amazon Cloud Directory</li>
+        <li>AWS Identity and Access Management</li>
+        <li>Amazon GuardDuty</li>
+        <li>Amazon Inspector</li>
+        <li>Amazon Macie</li>
+        <li>AWS Artifact</li>
+        <li>AWS Certificate Manager</li>
+        <li>AWS CloudHSM</li>
+        <li>AWS Directory Service</li>
+        <li>AWS Firewall Manager</li>
+        <li>AWS Key Management Service</li>
+        <li>AWS Organizations</li>
+        <li>AWS Secrets Manager</li>
+        <li>AWS Shield</li>
+        <li>AWS Single Sign-On</li>
+        <li>AWS WAF</li>
+        <h3>Storage</h3>
+        <li>Amazon S3</li>
+        <li>Amazon Elastic Block Store</li>
+        <li>Amazon Elastic File System</li>
+        <li>Amazon FSx for Lustre</li>
+        <li>Amazon FSx for Windows File Server</li>
+        <li>Amazon S3 Glacier</li>
+        <li>AWS Storage Gateway</li>
+        <h2>다음 단계 <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/next-steps.html">Next Steps</a></h2>
+        <p>다양한 AWS 제품 및 서비스를 직접 체험할 수 있게 해주는 <a href="https://aws.amazon.com/free/">AWS Free Tier</a>에 가입하여 IT를 사용한 작업 방식을 혁신하십시오. AWS Free Tier에서 워크로드를 테스트하고 애플리케이션을 실행하여 자신의 조직에 적합한 솔루션에 대해 자세히 알아보고 구축할 수 있습니다. 또한 <a href="https://aws.amazon.com/contact-us/aws-sales">AWS 영업 및 비즈니스 개발팀에 문의</a>할 수도 있습니다.</p>
+        <p><a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html">AWS에 가입</a>하면 Amazon의 클라우드 컴퓨팅 서비스에 액세스할 수 있습니다. 참고: 가입하려면 신용카드가 필요한데, 서비스 사용을 시작하기 전에는 요금이 청구되지 않습니다. 장기 약정이 없으므로 언제든지 AWS 사용을 해지할 수 있습니다.</p>
+        <p>AWS에 익숙해지려면 계정, 가상 서버 시작, 저장 매체 등의 주제를 다룬 <a href="https://aws.amazon.com/training/intro_series/">짧은 동영상</a>을 보시는 것이 도움이 됩니다. Amazon의 <a href="https://www.youtube.com/user/AmazonWebServices">일반 AWS 채널</a> 및 <a href="https://www.youtube.com/user/AWSwebinars">AWS Online Tech Talks</a>에서 AWS의 광범위하고 심도 깊은 서비스에 대해 자세히 알아보십시오. <a href="https://aws.amazon.com/training/self-paced-labs/">자습형 실습</a>을 통해 AWS를 직접 사용해 보십시오.</p>
+         <h3>결론</h3>
+         <p>AWS는 워크로드를 가상으로 지원하기 위해 신속하게 결합할 수 있는 구성 요소를 제공합니다. AWS를 통해 서로 협력하여 정교한 확장 가능 애플리케이션을 구축하도록 설계된 고가용성의 완전한 서비스 세트를 얻을 수 있습니다.</p>
+         <p>또한 고내구성 스토리지, 저비용 컴퓨팅, 고성능 데이터베이스, 관리 도구 등에 액세스할 수 있습니다. 이 모든 것은 선결제 비용 없이 사용할 수 있으며 사용한 만큼만 비용을 지불하면 됩니다. 이러한 서비스를 사용하면 조직이 더 빠르게 움직이고, IT 비용을 낮추며, 성장할 수 있습니다. AWS는 세계 최대 기업 및 가장 주목 받는 스타트업에서 웹 및 모바일 애플리케이션, 게임 개발, 데이터 처리 및 웨어하우징, 스토리지, 아카이브 등을 비롯한 다양한 워크로드를 강화시키는 것으로 인정받고 있습니다.</p>
+    </body>
+</html>
