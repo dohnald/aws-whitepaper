@@ -12,6 +12,10 @@ ul, ol, p {
 	line-height:1.6rem;
 }
 
+a {
+	color: #0073bb;
+}
+
 code {
 	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 	background-color: rgb(225,225,225);
