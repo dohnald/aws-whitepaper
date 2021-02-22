@@ -5,10 +5,10 @@ body {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
-h1, h2, h3, p, li {
+h1, h2, h3, p, li, td, th, dt, dd {
     word-break:keep-all;
 }
-ul, ol, p {
+ul, ol, p, td, th, dt, dd {
 	line-height:1.6rem;
 }
 
@@ -56,4 +56,33 @@ blockquote {
 
 h2 {
 	border-bottom:1px solid #0073bb;
+}
+
+table {
+    border-collapse:collapse;
+}
+table th {
+    background-color:#65c4ff;
+}
+
+th, td {
+    padding:0.5rem;
+}
+
+tr:nth-child(odd) {
+    background-color:#eee;
+}
+
+dl {
+    border-left: 0.2em solid #0073bb;
+}
+
+dt {
+    font-weight:700;
+    margin-left:1rem;
+}
+
+dd {
+    padding-left:0rem;
+    margin-left:1rem;
 }
